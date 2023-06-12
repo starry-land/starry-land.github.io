@@ -1,0 +1,64 @@
+@import 'base.css';
+
+body{
+    background: #a6cfff;
+    height: 9999px;
+}
+
+#emblem{
+    display: block;
+    width: 300px;
+    height: 300px;
+    left: calc(50% - 150px);
+    position: fixed;
+    top: calc(50% - 230px);
+    transition: 100ms;
+}
+
+#title{
+    width: 330px;
+    position: fixed;
+    height: 250px;
+    left: calc(50% - 165px);
+    top: calc(50%);
+}
+
+#title>.xing{
+    width: 210px;
+    fill: #00336e;
+    position: absolute;
+    top: 0;
+    transition: 100ms;
+    opacity: 0;
+}
+
+#title>.lan{
+    width: 150px;
+    fill: #00265b;
+    position: absolute;
+    top: 30px;
+    left: 140px;
+    transition: 100ms;
+    opacity: 0;
+}
+
+#title>.text{
+    line-height: 1;
+    position: absolute;
+    opacity: 0;
+    transition: 200ms;
+}
+
+#title>.text.chinese{
+    font-size: 40px;
+    line-height: 1;
+    top: 130px;
+    left: 160px;
+}
+
+#title>.text.eng{
+    font-size: 20px;
+    line-height: 1;
+    top: 210px;
+    left: 50px;
+}
